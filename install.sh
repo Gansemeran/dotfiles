@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-stow dunst ghostty hypr waybar zsh
+for d in */; do
+	stow "$d" -vv $1
+done
