@@ -1,15 +1,10 @@
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: 'MesloLGS NF Regular', FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-}
-* {
     border: none;
     border-radius: 0px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 10px;
-    min-height: 10px;
+    font-size: 14px;
+    min-height: 14px;
 }
 
 @import "theme.css";
@@ -141,7 +136,8 @@ tooltip {
 #custom-sl_end,
 #custom-sr_end,
 #custom-rl_end,
-#custom-rr_end {
+#custom-rr_end,
+#custom-power {
     color: @main-fg;
     background: @main-bg;
     opacity: 1;
@@ -190,3 +186,4 @@ tooltip {
     margin-left: 9px;
     padding-left: 3px;
 }
+

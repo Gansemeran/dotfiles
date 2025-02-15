@@ -118,3 +118,5 @@ alias vim=nvim
 source <(fzf --zsh)
 export FZF_DEFAULT_OPTS='--tmux --layout reverse'
 
+bindkey -s ^f "~/tmux-session\n"
+
