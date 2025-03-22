@@ -173,7 +173,7 @@
     "wireplumber": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
-        "format-muted": "",
+		"format-muted": "",
         "format-icons": ["", "", ""],
         "on-click": "pwvucontrol"
     },
