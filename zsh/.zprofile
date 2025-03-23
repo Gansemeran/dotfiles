@@ -4,6 +4,8 @@
 
 [[ -f ~/.zshrc ]] && . ~/.zshrc
 
-if uwsm check may-start >/dev/null; then
-	exec uwsm start hyprland.desktop
+if hash uwsm 2>/dev/null; then
+	if uwsm check may-start >/dev/null; then
+		exec uwsm start hyprland.desktop
+	fi
 fi
