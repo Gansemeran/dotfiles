@@ -27,6 +27,8 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 install tmux stow
 install_fzf
 
+# deno is optional
+# curl -fsSL https://deno.land/install.sh | sh -y --no-modify-path
 
 # run stow to load dotfiles
 ./stow.sh

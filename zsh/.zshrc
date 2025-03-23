@@ -120,3 +120,7 @@ export FZF_DEFAULT_OPTS='--tmux --layout reverse'
 
 bindkey -s ^f "~/tmux-session\n"
 
+# add deno if it exists
+if [[ -d "$HOME/.deno" ]]; then
+	export PATH="$PATH:$HOME/.deno/bin"
+fi
