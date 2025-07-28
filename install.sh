@@ -5,7 +5,7 @@
 # currently install using paru on arch or apt
 install() {
     if hash paru 2>/dev/null; then
-        sudo paru -S "$@" --no-confirm
+        sudo paru -S "$@" --noconfirm
     else
         sudo apt install "$@" -y
     fi
@@ -14,9 +14,9 @@ install() {
 # fzf in ubunbtu/debian is stupid old
 install_fzf() {
     if hash paru 2>/dev/null; then
-        sudo paru -S "$@" --no-confirm
+		install fzf
     else
-       go install github.com/junegunn/fzf@latest 
+       go install github.com/junegunn/fzf@latest
     fi
 }
 # omz
